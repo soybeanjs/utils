@@ -1,0 +1,6 @@
+export const keysOf = <T extends Record<string, unknown>>(record: T) => Object.keys(record) as (keyof T)[];
+
+export const entriesOf = <T extends Record<string, unknown>>(record: T) =>
+  Object.entries(record) as Array<[keyof T, T[keyof T]]>;
+
+export const valuesOf = <T extends Record<string, unknown>>(record: T) => Object.values(record) as T[keyof T][];
