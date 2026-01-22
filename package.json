@@ -1,7 +1,7 @@
 {
   "name": "@soybeanjs/utils",
   "type": "module",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "private": true,
   "packageManager": "pnpm@10.28.1",
   "description": "A collection of useful utility functions for JavaScript and TypeScript projects of SoybeanJS.",
