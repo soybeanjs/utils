@@ -1,6 +1,24 @@
 # Changelog
 
 
+## [v0.0.2](https://github.com/soybeanjs/utils/compare/v0.0.1...v0.0.2) (2026-02-03)
+
+### &nbsp;&nbsp;&nbsp;🚀 Features
+
+- **tree**: add tree building utility &nbsp;-&nbsp; by @soybeanjs [<samp>(f8669)</samp>](https://github.com/soybeanjs/utils/commit/f86692c)
+
+### &nbsp;&nbsp;&nbsp;📖 Documentation
+
+- **changelog**: add initial changelog &nbsp;-&nbsp; by @soybeanjs [<samp>(8505b)</samp>](https://github.com/soybeanjs/utils/commit/8505b85)
+
+### &nbsp;&nbsp;&nbsp;🏡 Chore
+
+- **package**: remove private flag from package.json &nbsp;-&nbsp; by @soybeanjs [<samp>(e1af8)</samp>](https://github.com/soybeanjs/utils/commit/e1af8cd)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
+
 ## [v0.0.1](https://github.com/soybeanjs/utils/compare/v0.0.1...main) (2026-01-23)
 
 ### &nbsp;&nbsp;&nbsp;🚀 Features
