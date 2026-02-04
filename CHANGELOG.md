@@ -1,6 +1,5 @@
 # Changelog
 
-
 ## [v0.0.2](https://github.com/soybeanjs/utils/compare/v0.0.1...v0.0.2) (2026-02-03)
 
 ### &nbsp;&nbsp;&nbsp;🚀 Features
@@ -32,4 +31,3 @@
 ### &nbsp;&nbsp;&nbsp;❤️ Contributors
 
 [![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
-
