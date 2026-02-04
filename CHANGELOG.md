@@ -1,5 +1,19 @@
 # Changelog
 
+## [v0.0.3](https://github.com/soybeanjs/utils/compare/v0.0.2...v0.0.3) (2026-02-04)
+
+### &nbsp;&nbsp;&nbsp;🚀 Features
+
+- **path**: add route path matching utility &nbsp;-&nbsp; by @soybeanjs [<samp>(7755e)</samp>](https://github.com/soybeanjs/utils/commit/7755ed3)
+
+### &nbsp;&nbsp;&nbsp;🏡 Chore
+
+- **projects**: use oxlint and oxfmt replace eslint and prettier &nbsp;-&nbsp; by @soybeanjs [<samp>(7d6b7)</samp>](https://github.com/soybeanjs/utils/commit/7d6b793)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
+
 ## [v0.0.2](https://github.com/soybeanjs/utils/compare/v0.0.1...v0.0.2) (2026-02-03)
 
 ### &nbsp;&nbsp;&nbsp;🚀 Features

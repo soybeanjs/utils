@@ -1,6 +1,6 @@
 {
   "name": "@soybeanjs/utils",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A collection of useful utility functions for JavaScript and TypeScript projects of SoybeanJS.",
   "homepage": "https://github.com/soybeanjs/utils",
   "bugs": {
