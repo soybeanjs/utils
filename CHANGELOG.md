@@ -1,5 +1,15 @@
 # Changelog
 
+## [v0.0.4](https://github.com/soybeanjs/utils/compare/v0.0.3...v0.0.4) (2026-02-05)
+
+### &nbsp;&nbsp;&nbsp;🚀 Features
+
+- **common**: add isNullish utility function to check for null or undefined values &nbsp;-&nbsp; by @soybeanjs [<samp>(14b11)</samp>](https://github.com/soybeanjs/utils/commit/14b11c4)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
+
 ## [v0.0.3](https://github.com/soybeanjs/utils/compare/v0.0.2...v0.0.3) (2026-02-04)
 
 ### &nbsp;&nbsp;&nbsp;🚀 Features
