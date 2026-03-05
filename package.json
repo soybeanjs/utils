@@ -45,7 +45,7 @@
     "publish-pkg": "pnpm publish --access public",
     "release": "soy release",
     "typecheck": "tsc --noEmit --skipLibCheck",
-    "update-pkg": "soy ncu"
+    "upkg": "soy ncu"
   },
   "devDependencies": {
     "@soybeanjs/cli": "1.4.4",
