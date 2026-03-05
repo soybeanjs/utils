@@ -20,7 +20,7 @@ export const kebabCase = (str: string) => str.replace(/([a-z0-9])([A-Z])/g, '$1-
  * @param str - The string to convert
  * @returns String in PascalCase format
  */
-export const pascalCase = (str: string) => str.replace(/(^\w|-\w)/g, char => char.replace('-', '').toUpperCase());
+export const pascalCase = (str: string) => str.replace(/(^\w|[-_]\w)/g, char => char.replace(/[-_]/, '').toUpperCase());
 
 /**
  * Convert string to camelCase format (驼峰命名)
@@ -32,7 +32,7 @@ export const pascalCase = (str: string) => str.replace(/(^\w|-\w)/g, char => cha
  * @param str - The string to convert
  * @returns String in camelCase format
  */
-export const camelCase = (str: string) => str.replace(/(-\w)/g, char => char.replace('-', '').toUpperCase());
+export const camelCase = (str: string) => str.replace(/([-_]\w)/g, char => char.replace(/[-_]/, '').toUpperCase());
 
 /**
  *  Convert string to snake_case format (蛇形命名)
