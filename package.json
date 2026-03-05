@@ -37,6 +37,8 @@
     "cleanup": "soy cleanup",
     "commit": "soy git-commit",
     "dev": "tsup --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
     "lint": "oxlint --fix",
     "fmt": "oxfmt",
     "prepare": "simple-git-hooks",
@@ -54,7 +56,8 @@
     "simple-git-hooks": "2.13.1",
     "tsdown": "0.20.0",
     "tsx": "4.21.0",
-    "typescript": "5.9.3"
+    "typescript": "5.9.3",
+    "vitest": "^4.0.18"
   },
   "simple-git-hooks": {
     "commit-msg": "pnpm soy git-commit-verify",
