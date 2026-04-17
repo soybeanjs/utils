@@ -41,26 +41,22 @@ export const buildTree = <K extends string, P extends string, T extends BaseFlat
   return tree;
 };
 
-type BaseNode<K extends string, V extends string | number> = {
+type BaseNode<K extends string, V extends string | number = string | number> = {
   [key in K]: V;
 };
 
-type BaseTreeNode<K extends string, V extends string | number, T extends BaseNode<K, V>> = T & {
-  children?: Array<BaseTreeNode<K, V, T>>;
+type BaseTreeNode<K extends string, T extends BaseNode<K>> = T & {
+  children?: Array<BaseTreeNode<K, T>>;
 };
 
-export const getTreePaths = <K extends string, V extends string | number, T extends BaseNode<K, V>>(
+export const getTreePaths = <K extends string, T extends BaseNode<K>>(
   nodeKey: K,
-  target: V,
-  nodes: BaseTreeNode<K, V, T>[]
+  target: T[K],
+  nodes: BaseTreeNode<K, T>[]
 ) => {
-  const paths: V[] = [];
+  const paths: T[K][] = [];
 
-  if (!target) {
-    return paths;
-  }
-
-  function dfs(node: BaseTreeNode<K, V, T>, path: V[]): V[] | null {
+  function dfs(node: BaseTreeNode<K, T>, path: T[K][]): T[K][] | null {
     const currentPath = [...path, node[nodeKey]];
 
     // if find the target value, return the path
