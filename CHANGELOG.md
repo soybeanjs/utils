@@ -1,5 +1,23 @@
 # Changelog
 
+## [v0.1.0](https://github.com/soybeanjs/utils/compare/v0.0.5...v0.1.0) (2026-04-17)
+
+### &nbsp;&nbsp;&nbsp;💅 Refactors
+
+- **tree**: rename BaseNode and BaseTreeNode types for clarity &nbsp;-&nbsp; by @soybeanjs [<samp>(d8272)</samp>](https://github.com/soybeanjs/utils/commit/d827285)
+
+### &nbsp;&nbsp;&nbsp;🏡 Chore
+
+- **deps**: update deps &nbsp;-&nbsp; by @soybeanjs [<samp>(b746e)</samp>](https://github.com/soybeanjs/utils/commit/b746e44)
+
+### &nbsp;&nbsp;&nbsp;✅ Tests
+
+- **tree**: add tests for getTreePaths function &nbsp;-&nbsp; by @soybeanjs [<samp>(37ddf)</samp>](https://github.com/soybeanjs/utils/commit/37ddffd)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
+
 ## [v0.0.5](https://github.com/soybeanjs/utils/compare/v0.0.4...v0.0.5) (2026-03-05)
 
 ### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
