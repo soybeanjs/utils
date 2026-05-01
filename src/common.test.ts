@@ -1,6 +1,6 @@
-import { describe, expect, it } from 'vitest';
+import { describe, expect, expectTypeOf, it } from 'vitest';
 
-import { entriesOf, isNullish, keysOf, valuesOf } from './common';
+import { entriesOf, filterNullish, isNullish, keysOf, valuesOf } from './common';
 
 describe('common utils', () => {
   it('keysOf returns typed keys', () => {
@@ -27,5 +27,13 @@ describe('common utils', () => {
     expect(isNullish(false)).toBe(false);
     expect(isNullish(0)).toBe(false);
     expect(isNullish('')).toBe(false);
+  });
+
+  it('filterNullish removes nullish values and narrows the element type', () => {
+    const values = [1, null, 2, undefined, 3] as const;
+    const filtered = filterNullish(values);
+
+    expect(filtered).toEqual([1, 2, 3]);
+    expectTypeOf(filtered).toEqualTypeOf<Array<1 | 2 | 3>>();
   });
 });
