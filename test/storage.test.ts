@@ -52,6 +52,17 @@ describe('storage utils', () => {
     expect(storage.get('token')).toBeNull();
   });
 
+  it('no-ops during ssr when window is undefined', () => {
+    vi.unstubAllGlobals();
+
+    const storage = createStorage<{ token: string }>('local', 'app_');
+
+    expect(() => storage.set('token', 'abc')).not.toThrow();
+    expect(storage.get('token')).toBeNull();
+    expect(() => storage.remove('token')).not.toThrow();
+    expect(() => storage.clear()).not.toThrow();
+  });
+
   it('returns null and clears invalid json', () => {
     const storage = createStorage<{ token: string }>('local', 'app_');
 

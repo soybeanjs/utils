@@ -1,5 +1,14 @@
 import type { StorageType } from './types';
 
+/** Resolve the web storage on the client, `null` during SSR (客户端解析存储，SSR 下返回 null) */
+function resolveStorage(type: StorageType): Storage | null {
+  if (typeof window === 'undefined') {
+    return null;
+  }
+
+  return type === 'session' ? window.sessionStorage : window.localStorage;
+}
+
 /**
  * Create storage (创建存储)
  *
@@ -7,8 +16,6 @@ import type { StorageType } from './types';
  * @param storagePrefix Storage prefix (存储前缀)
  */
 export function createStorage<T extends object>(type: StorageType, storagePrefix: string) {
-  const stg = type === 'session' ? window.sessionStorage : window.localStorage;
-
   const getKey = (key: keyof T) => `${storagePrefix}${String(key)}`;
 
   const storage = {
@@ -20,6 +27,11 @@ export function createStorage<T extends object>(type: StorageType, storagePrefix
      */
     set<K extends keyof T>(key: K, value: T[K]) {
       const sKey = getKey(key);
+
+      const stg = resolveStorage(type);
+      if (!stg) {
+        return;
+      }
 
       const json = JSON.stringify(value);
 
@@ -38,6 +50,11 @@ export function createStorage<T extends object>(type: StorageType, storagePrefix
      */
     get<K extends keyof T>(key: K): T[K] | null {
       const sKey = getKey(key);
+
+      const stg = resolveStorage(type);
+      if (!stg) {
+        return null;
+      }
 
       const json = stg.getItem(sKey);
       if (json) {
@@ -63,13 +80,13 @@ export function createStorage<T extends object>(type: StorageType, storagePrefix
      * @param key Storage key (存储键)
      */
     remove(key: keyof T) {
-      stg.removeItem(getKey(key));
+      resolveStorage(type)?.removeItem(getKey(key));
     },
     /**
      * Clear all storage (清空所有存储)
      */
     clear() {
-      stg.clear();
+      resolveStorage(type)?.clear();
     }
   };
 
