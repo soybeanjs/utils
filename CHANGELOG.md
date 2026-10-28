@@ -1,5 +1,21 @@
 # Changelog
 
+## [v0.1.2](https://github.com/soybeanjs/utils/compare/v0.1.1...v0.1.2) (2026-10-28)
+
+### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
+
+- **storage**: guard window access for ssr compatibility &nbsp;-&nbsp; by @soybeanjs [<samp>(6a35c)</samp>](https://github.com/soybeanjs/utils/commit/6a35cd4)
+
+### &nbsp;&nbsp;&nbsp;🏡 Chore
+
+- **gitattributes**: set text=auto eol=lf &nbsp;-&nbsp; by @soybeanjs [<samp>(a88c0)</samp>](https://github.com/soybeanjs/utils/commit/a88c0ed)
+- **projects**: migrate to vite-plus &nbsp;-&nbsp; by @soybeanjs [<samp>(3f2b6)</samp>](https://github.com/soybeanjs/utils/commit/3f2b637)
+- **test**: add unit tests for common, path, storage, string, and tree utilities &nbsp;-&nbsp; by @soybeanjs [<samp>(4957a)</samp>](https://github.com/soybeanjs/utils/commit/4957a1e)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
+
 ## [v0.1.1](https://github.com/soybeanjs/utils/compare/v0.1.0...v0.1.1) (2026-05-01)
 
 ### &nbsp;&nbsp;&nbsp;🚀 Features
