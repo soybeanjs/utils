@@ -1,5 +1,5 @@
 import { beforeEach, describe, expect, it, vi } from 'vitest';
-import { createStorage } from './storage';
+import { createStorage } from '../src/storage';
 
 type MemoryStorage = {
   getItem: (key: string) => string | null;

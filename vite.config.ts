@@ -18,5 +18,8 @@ export default defineConfig({
     platform: 'neutral',
     dts: true,
     fixedExtension: false
+  },
+  test: {
+    include: ['test/**/*.{test,spec}.ts']
   }
 });

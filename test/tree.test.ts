@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { buildTree, getTreePaths } from './tree';
+import { buildTree, getTreePaths } from '../src/tree';
 
 type TestTreeNode = {
   id: number;

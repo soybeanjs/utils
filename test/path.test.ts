@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { isMatchParamRoute } from './path';
+import { isMatchParamRoute } from '../src/path';
 
 describe('path utils', () => {
   it('matches static and dynamic segments', () => {
