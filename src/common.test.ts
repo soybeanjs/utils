@@ -1,5 +1,4 @@
 import { describe, expect, expectTypeOf, it } from 'vitest';
-
 import { entriesOf, filterNullish, isNullish, keysOf, valuesOf } from './common';
 
 describe('common utils', () => {

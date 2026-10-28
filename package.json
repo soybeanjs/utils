@@ -33,38 +33,25 @@
     "registry": "https://registry.npmjs.org/"
   },
   "scripts": {
-    "build": "tsdown",
-    "cleanup": "soy cleanup",
+    "build": "vp pack",
     "commit": "soy git-commit",
-    "dev": "tsup --watch",
-    "test": "vitest run",
-    "test:watch": "vitest",
-    "lint": "oxlint . --fix",
-    "fmt": "oxfmt",
-    "prepare": "simple-git-hooks",
+    "fmt": "vp fmt",
+    "lint": "vp lint . --fix",
+    "prepare": "vp config --no-agent",
     "publish-pkg": "pnpm publish --access public",
     "release": "soy release",
+    "test": "vp test",
+    "test:watch": "vp test watch",
     "typecheck": "tsc --noEmit --skipLibCheck",
     "upkg": "soy ncu"
   },
   "devDependencies": {
-    "@soybeanjs/cli": "1.7.2",
-    "@types/node": "25.6.0",
-    "lint-staged": "16.4.0",
-    "oxfmt": "^0.47.0",
-    "oxlint": "^1.62.0",
-    "simple-git-hooks": "2.13.1",
-    "tsdown": "0.21.10",
-    "tsx": "4.21.0",
-    "typescript": "6.0.3",
-    "vitest": "^4.1.5"
+    "@soybeanjs/cli": "^1.8.4",
+    "@soybeanjs/oxc-config": "^0.2.7",
+    "@types/node": "^26.6.5",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vite-plus": "catalog:"
   },
-  "simple-git-hooks": {
-    "commit-msg": "pnpm soy git-commit-verify",
-    "pre-commit": "pnpm typecheck && pnpm lint-staged"
-  },
-  "lint-staged": {
-    "*": "oxlint . --fix && oxfmt"
-  },
-  "packageManager": "pnpm@10.33.2"
+  "packageManager": "pnpm@12.15.0"
 }

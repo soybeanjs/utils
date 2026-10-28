@@ -1,5 +1,4 @@
 import { describe, expect, it } from 'vitest';
-
 import { buildTree, getTreePaths } from './tree';
 
 type TestTreeNode = {

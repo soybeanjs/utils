@@ -5,7 +5,7 @@
     "jsxImportSource": "vue",
     "lib": ["DOM", "ESNext"],
     "module": "ESNext",
-    "moduleResolution": "bundler",
+    "moduleResolution": "Bundler",
     "paths": {
       "@/*": ["./src/*"]
     },
@@ -13,6 +13,8 @@
     "types": ["node"],
     "strict": true,
     "strictNullChecks": true,
+    "noImplicitThis": true,
+    "noUncheckedIndexedAccess": false,
     "noUnusedLocals": true,
     "declaration": true,
     "emitDeclarationOnly": true,
@@ -23,6 +25,6 @@
     "verbatimModuleSyntax": true,
     "skipLibCheck": true
   },
-  "include": ["src/**/*"],
+  "include": ["src/**/*", "vite.config.ts"],
   "exclude": ["node_modules", "dist"]
 }

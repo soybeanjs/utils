@@ -1,5 +1,4 @@
 import { describe, expect, it } from 'vitest';
-
 import { camelCase, kebabCase, pascalCase, snakeCase } from './string';
 
 describe('string case conversion', () => {
